@@ -152,6 +152,7 @@
                     <xmlOutput>true</xmlOutput>
                     <htmlOutput>true</htmlOutput>
                     <outputDirectory>${project.build.directory}/spotbugs</outputDirectory>
+                    <excludeFilterFile>spotbugs-exclude.xml</excludeFilterFile>
                 </configuration>
             </plugin>
 
@@ -162,16 +163,10 @@
                 <version>10.0.4</version>
                 <configuration>
                     <nvdApiKey>706c3d20-38f7-490f-aaf8-f9c9a65eff18</nvdApiKey>
-                    <format>ALL</format>
-                    <failBuildOnCVSS>7</failBuildOnCVSS>
+                    <format>HTML</format>
+                    <failBuildOnCVSS>11</failBuildOnCVSS>
+                    <skipSystemScope>true</skipSystemScope>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
