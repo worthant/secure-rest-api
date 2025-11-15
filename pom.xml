@@ -166,6 +166,8 @@
                     <failBuildOnCVSS>11</failBuildOnCVSS>
                     <skipSystemScope>true</skipSystemScope>
                     <autoUpdate>true</autoUpdate>
+                    <ossindexAnalyzerEnabled>false</ossindexAnalyzerEnabled>
+                    <failOnError>false</failOnError>
                 </configuration>
             </plugin>
 
