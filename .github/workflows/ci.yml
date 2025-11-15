@@ -55,14 +55,6 @@ jobs:
           path: target/dependency-check-report.html
           retention-days: 30
 
-      - name: Upload Dependency-Check Report (XML)
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: dependency-check-report-xml
-          path: target/dependency-check-report.xml
-          retention-days: 30
-
       - name: Generate Security Summary
         if: always()
         run: |
