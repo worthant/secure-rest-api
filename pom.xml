@@ -160,14 +160,17 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>10.0.4</version>
+                <version>12.1.0</version>
                 <configuration>
                     <nvdApiKey>706c3d20-38f7-490f-aaf8-f9c9a65eff18</nvdApiKey>
                     <format>HTML</format>
                     <failBuildOnCVSS>11</failBuildOnCVSS>
                     <skipSystemScope>true</skipSystemScope>
+                    <nvdValidForHours>24</nvdValidForHours>
+                    <autoUpdate>false</autoUpdate>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
