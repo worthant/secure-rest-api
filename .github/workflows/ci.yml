@@ -44,7 +44,7 @@ jobs:
           retention-days: 30
 
       - name: Run OWASP Dependency-Check (SCA)
-        run: mvn org.owasp:dependency-check-maven:check -DautoUpdate=true -B
+        run: mvn org.owasp:dependency-check-maven:check -B
         continue-on-error: true
 
       - name: Upload Dependency-Check Report (HTML)

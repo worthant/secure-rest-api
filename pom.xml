@@ -156,7 +156,6 @@
                 </configuration>
             </plugin>
 
-            <!-- OWASP Dependency-Check Plugin (SCA) -->
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
@@ -166,8 +165,7 @@
                     <format>HTML</format>
                     <failBuildOnCVSS>11</failBuildOnCVSS>
                     <skipSystemScope>true</skipSystemScope>
-                    <nvdValidForHours>24</nvdValidForHours>
-                    <autoUpdate>false</autoUpdate>
+                    <autoUpdate>true</autoUpdate>
                 </configuration>
             </plugin>
 
