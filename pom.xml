@@ -110,6 +110,20 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Обновление Guava для устранения уязвимостей CVE-2023-2976, CVE-2020-8908 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.0.0-jre</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-activation</artifactId>
+            <version>2.1.0-M1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
