@@ -45,7 +45,7 @@ jobs:
 
       - name: Run OWASP Dependency-Check (SCA)
         run: mvn org.owasp:dependency-check-maven:check -DautoUpdate=true -B
-        ontinue-on-error: true
+        continue-on-error: true
 
       - name: Upload Dependency-Check Report (HTML)
         uses: actions/upload-artifact@v4
