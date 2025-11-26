@@ -160,7 +160,8 @@ public ResponseEntity<List<UserResponse>> getAllUsers() {
 
 ## Отчет SAST (SpotBugs)
 
-![SpotBugs Report](img/spotBugs.png)
+<img width="827" height="719" alt="image" src="https://github.com/user-attachments/assets/45d8be22-25ce-4c8e-9b63-6325a3d36ebc" />
+
 
 ## Отчет SCA (OWASP Dependency-Check)
 
