@@ -168,3 +168,5 @@ public ResponseEntity<List<UserResponse>> getAllUsers() {
 ![SCA Report](img/SCA.png)
 
 ## Ссылка на последний успешный запуск pipeline
+
+https://github.com/worthant/secure-rest-api/actions/runs/19712565117/job/56476755898
